@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Sehat Verifikasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://medicalcertificate.labklinikkimiafarma.co.id/assets/logo/KF_LK_Logo_Full Colors_Primer_Tagline.png" alt="" height="100px;">
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>SURAT KETERANGAN ISTIRAHAT</h2>
+            <h4>MEDICAL CERTIFICATE</h4>
+        </div>
+        <h4>No.015593/BKG/KFD-SMT5/MC/VIII/2024</h4>
+        <div class="status">
+            <h4 style="text-align: center;margin-top:0px;">Status : <i style="color:blue;">Terverifikasi</i> <img src="https://medicalcertificate.labklinikkimiafarma.co.id/assets/logo/verif.png" alt="" height="20px;"></h4>
+        </div>
+        <hr>
+        <div class="tbody">
+            <table style="margin-left: 5px;">
+                <tr>
+                    <td><b>Nama</b><br>
+                    <span style="font-style:italic">/Name</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>LUKMAN HAKIM</b></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><br><b>No. Pegawai</b><br>
+                    <span style="font-style:italic">/Badge</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>M3535</b></td>
+                </tr>
+                <tr>
+                    <td><br><b>Perusahaan</b><br>
+                    <span style="font-style:italic">/Company</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>PT RACER TECHNOLOGY BATAM</b></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <h6 style="margin-left: 5px;">Berdasarkan pemeriksaan medis yang dilakukan, bersangkutan menderita sakit, membutuhkan istirahat sakit selama :</h6>
+        <h6 style="margin-left: 5px; text-align: left;font-style:italic;margin-top:-30px;font-weight: lighter;">Based on the medical examination carried out, the person concerned suffers from illness, requires sick rest for :</h6>
+        <div class="tbody">
+            <table style="margin-left: 5px;">
+                <tr>
+                    <td><b>Durasi</b><br>
+                    <span style="font-style:italic">/Duration</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>1 / 1</b></td>
+                </tr>
+                <tr>
+                    <td><b>Tanggal Mulai</b><br>
+                    <span style="font-style:italic">/Start Date</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>9 Agustus 2024 / August 9th 2024</b></td>
+                </tr>
+                <tr>
+                    <td><b>Tanggal Selesai</b><br>
+                    <span style="font-style:italic">/End Date</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>9 Agustus 2024 / August 9th 2024</b></td>
+                </tr>
+                <tr>
+                    <td><b>Klinik</b><br>
+                    <span style="font-style:italic">/Healthcare Facility</span></td>
+                    <td>:</td>
+                    <td style="font-weight:bold;"><b>Klinik Kimia Farma 0463 - BENGKONG</b></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="tbody">
+                <table style="margin-left: 5px;">
+                    <tr>
+                        <td><b>Dokter</b><br>
+                        <span style="font-style:italic">/Doctor</span></td>
+                        <td>:</td>
+                        <td style="font-weight:bold;"><b>dr Emilia</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tanggal Dibuat</b><br>
+                        <span style="font-style:italic">/Created Date</span></td>
+                        <td>:</td>
+                        <td style="font-weight:bold;"><b>9 Agustus 2024 / August 9th 2024</b></td>
+                    </tr>
+                </table>
+        </div>
+        <div id="qrcode"></div>
+    </div>
+    <div class="button-container">
+        <button type="submit" class="sub" onclick="downloadPDF()"><b>Lihat Dokumen</b><br><span style="font-style:italic">View Documents</span></button>
+    </div>
+    <script>
+        function downloadPDF() {
+            // Ganti 'nama_file.pdf' dengan nama file PDF Anda
+            window.open('medicalcertificate.labklinikkimiafarma_surat_verify.pdf', '_blank'); // membuka file PDF di jendela baru
+            var qr = new QRCode(document.getElementById("qrcode"), {
+                width: 200,
+                height: 200
+            });
+            qr.makeCode("file:///G:/koding/index.html"); // Ganti URL dengan URL file lokal Anda
+        }
+    </script>    
+</body>
+</html>
